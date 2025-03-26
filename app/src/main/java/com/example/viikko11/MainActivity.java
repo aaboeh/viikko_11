@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         sortAlphabeticallyButton = findViewById(R.id.SortAlphabeticallyButton);
         sortAlphabeticallyButton.setOnClickListener(view -> sortAlphabetically());
 
+        sortByGroupButton = findViewById(R.id.SortByGroupButton);
+        sortByGroupButton.setOnClickListener(view -> {
+            ContactStorage.getInstance().sortByGroup();
+            adapter.notifyDataSetChanged();
+        });
+
     }
 
     @Override
