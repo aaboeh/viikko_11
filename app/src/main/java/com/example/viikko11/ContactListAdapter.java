@@ -29,7 +29,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactViewHolder> 
     public void onBindViewHolder(@NonNull ContactViewHolder holder, int position) {
         //holder.contactImage.setImage();
         holder.contactNameText.setText(contacts.get(position).getFullName());
-        holder.contactNumberText.setText(contacts.get(position).getPhoneNumber());
+        holder.contactNumberText.setText(contacts.get(position).getNumber());
         holder.contactGroupText.setText(contacts.get(position).getContactGroup());
 
         holder.contactDetailsButton.setOnClickListener(view -> {
