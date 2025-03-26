@@ -37,7 +37,7 @@ public class ContactStorage {
 
         while(iterator.hasNext()) {
             Contact contact = iterator.next();
-            if("Työasiat".equals(contact.getContactGroup())) {
+            if("Työ".equals(contact.getContactGroup())) {
                 workContacts.add(contact);
             } else {
                 personalContacts.add(contact);

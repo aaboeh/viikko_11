@@ -29,7 +29,7 @@ public class AddContactActivity extends AppCompatActivity {
         String lastName = lastNameEdit.getText().toString();
         String phoneNumber = phoneNumberEdit.getText().toString();
 
-        String contactGroup = (contactTypeRadioGroup.getCheckedRadioButtonId() == R.id.PersonalRadioButton) ? "Henkilökohtainen" : "Työasiat";
+        String contactGroup = (contactTypeRadioGroup.getCheckedRadioButtonId() == R.id.PersonalRadioButton) ? "Henkilökohtainen" : "Työ";
 
         ContactStorage.getInstance().addContact(new Contact(firstName, lastName, phoneNumber, contactGroup));
         //finish();
